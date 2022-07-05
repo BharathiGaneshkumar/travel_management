@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <font face="Stencil" size="6px" style="color:rgb(250, 242, 242)">ULAA</font>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">
+              <font face="Trebuchet MS" size="4px" style="color:rgb(250, 242, 242)">Home</font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/availability">
+              <font face="Trebuchet MS" size="4px" style="color:rgb(250, 242, 242)">Check Availability</font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/findbus">
+              <font face="Trebuchet MS" size="4px" style="color:rgb(250, 242, 242)">Booking</font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'seebookings' %}">
+              <font face="Trebuchet MS" size="4px" style="color:rgb(250, 242, 242)">Cancellation</font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faq">
+              <font face="Trebuchet MS" size="4px" style="color:rgb(250, 242, 242)">FAQs</font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">
+              <font face="Trebuchet MS" size="4px" style="color:rgb(250, 242, 242)">Contact Us</font>
+            </a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1900x700/?bus,road" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1900x700/?buses,ticket" class="d-block w-100" alt="...">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container my-3">
+    <br>
+    <h2 class="text-center mb-3">
+      <font face="Tw Cen MT Condensed Extra Bold" size="20px" style="color:rgb(2, 1, 1)">About Us</font>
+    </h2>
+    <p>
+      <font face="Trebuchet MS" size="5px" style="color:rgb(2, 1, 1)">Ulaa is a travel facilitator designed
+        exclusively for the city of Coimbatore. Ulaa comprises of a wide array of noteworthy bus companies offering
+        fast, effortless, and secure booking experiences. Ulaa helps you reduce the waiting time in bus stops by
+        offering the possiblity of checking availability of buses for a particular destination within Coimbatore. Ulaa
+        enables you to choose the destination,and book your bus ticket with just a few clicks. Avail exciting Ulaa
+        offers and experience an unforgettable journey!</font>
+    </p>
+    <p>
+      <font face="Trebuchet MS" size="5px" style="color:rgb(2, 1, 1)">Buying a bus ticket on the Ulaa website is
+        really simple. Enter the point of origin and destination. Compare the prices, schedules, and services of every
+        bus operator providing their services on the route of your choice, and proceed to the payment page to complete
+        the booking process. Once your payment has been confirmed, all you have to do is pack your bags and get ready to
+        travel. It's that simple!</font>
+    </p>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://source.unsplash.com/500x300/?bus,transport" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"><font face="Trebuchet MS" style="color:rgb(14, 10, 10)">Check Availability</font></h4>
+            <p class="card-text"><font face="Trebuchet MS" style="color:rgb(14, 10, 10)">Check availability of buses within Coimbatore!</font></p>
+            <a href="/availability" class="btn btn-primary"><font face="Trebuchet MS" style="color:rgb(252, 247, 247)">Go</font></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://source.unsplash.com/500x300/?bus,transport" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"><font face="Trebuchet MS" style="color:rgb(14, 10, 10)">Booking</font></h4>
+            <p class="card-text"><font face="Trebuchet MS" style="color:rgb(14, 10, 10)">Book tickets to other districts!</font></p>
+            <br>
+            <a href="/findbus" class="btn btn-primary"><font face="Trebuchet MS" style="color:rgb(252, 247, 247)">Go</font></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://source.unsplash.com/500x300/?bus,transport" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"><font face="Trebuchet MS" style="color:rgb(14, 10, 10)">Cancellation</font></h4>
+            <p class="card-text"><font face="Trebuchet MS" style="color:rgb(14, 10, 10)">Cancel the already booked tickets! </font></p>
+            <br>
+            <a href="/seebookings" class="btn btn-primary"><font face="Trebuchet MS" style="color:rgb(252, 247, 247)">Go</font></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+  <footer class='text-center mb-3 position-relative fixed-bottom'>Copyright &copy; ULAA | All rights reserved</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
